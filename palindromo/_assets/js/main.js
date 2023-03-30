@@ -20,4 +20,12 @@ document.querySelector(".btnSubmit").addEventListener("click", function () { // 
     let isPalindroma = true;
     console.log(isPalindroma)
 
+    for (let i = 0; i < inputLowerCase.length / 2; i++) { // Cicli for per confrontare i caratteri della parola
+        console.log(inputLowerCase.length)
+        if (inputLowerCase[i] !== inputLowerCase[inputLowerCase.length - i - 1]) { // Confronta il carattere corrispondenteall'inizio e alla fine della parola. Se questi non coincidono, allora la parola non è palidroma
+            isPalindroma = false;
+            break; // Interrompe immediatamente l'esecuzione del ciclo.
+        }
+    }
+
 })
