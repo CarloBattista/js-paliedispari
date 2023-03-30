@@ -28,4 +28,15 @@ document.querySelector(".btnSubmit").addEventListener("click", function () { // 
         }
     }
 
+    // Mostriamo un messaggio dentro al container di conseguenza
+    if (isPalindroma) {
+        container.innerHTML = `
+            <h1>${inputText}: La parola è palindroma!</h1>
+        `;
+    } else {
+        container.innerHTML = `
+            <h1>${inputText}: La parola non è palindroma!</h1>
+        `;
+    }
+
 })
